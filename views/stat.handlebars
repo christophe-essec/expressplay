@@ -1,0 +1,14 @@
+<p>We found {{nbGames}} games and the last 20 games were the following : </p>
+<table class="table">
+    <caption>Optional table caption.</caption>
+    <thead>
+        <tr>
+            <th>Player Name</th> <th>Player Pick</th> <th>Computer Pick</th>
+        </tr>
+    </thead>
+    <tbody>
+        {{#each lastGames}}
+            <tr><th scope="row">{{playerName}}</th> <td>{{player}}</td> <td>{{computer}}</td> </tr>
+        {{/each}}
+    </tbody>
+</table>
